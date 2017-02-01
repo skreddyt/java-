@@ -3,11 +3,11 @@ $tomcat_pname = $facts['os']['family'] ? {
     'debian' => 'tomcat7',
 
 }
-package { '$tomcat_pname':
+package { $tomcat_pname:
     ensure => installed,
     
 }
-service { '$tomcat_pname':
+service { $tomcat_pname:
     ensure     => running,
     enable     => true,
     
