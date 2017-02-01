@@ -3,7 +3,7 @@ service { 'tomcat':
     enable     => true,
     hasrestart => true,
     hasstatus  => true,
-    require    => package['tomcat']
+    require    => Package['tomcat']
     # pattern    => 'tomcat',
 }
 package { 'tomcat':
