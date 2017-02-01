@@ -7,7 +7,7 @@ package { '$tomcat_pname':
     ensure => installed,
     
 }
-service { "tomcat":
+service { "$tomcat_pname":
     ensure     => running,
     enable     => true,
     
