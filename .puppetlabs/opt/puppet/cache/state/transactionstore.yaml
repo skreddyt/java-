@@ -1,7 +1,0 @@
----
-resources:
-  Notify[apache2]:
-    parameters:
-      message:
-        system_value:
-        - apache2
