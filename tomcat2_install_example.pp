@@ -8,5 +8,5 @@ service { 'tomcat':
 }
 package { 'tomcat':
     ensure => installed,
-    before => service['tomcat']   
+    before => Service['tomcat']   
 }
